@@ -8,4 +8,20 @@ public class UserCheck implements UserCheckService {
     public boolean passCheck(User user) {
         return false;
     }
+    @Override
+    public boolean userNameCheck(User user) {
+        return false;
+    }
+
+    @Override
+    public boolean mailCheck(User user) {
+        return false;
+    }
+
+    @Override
+    public boolean isSuccess(User user) {
+        return false;
+    }
+
+
 }
