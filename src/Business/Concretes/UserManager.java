@@ -3,6 +3,7 @@ package Business.Concretes;
 import Business.Abstracts.UserCheckService;
 import Business.Abstracts.UserService;
 import Business.Abstracts.VerificationService;
+import Business.RandomSignUpLib.RandomSignManager;
 import DataAccess.Abstracts.UserDao;
 import Entities.Concretes.User;
 
@@ -12,12 +13,14 @@ public class UserManager implements UserService {
     private VerificationService verificationService;
     private UserCheckService userCheckService;
     private UserDao userDao;
+    private RandomSignManager randomSignManager;
 
     //UserManager Constructor
-    public UserManager(UserCheckService userCheckService, UserDao userDao, VerificationService verificationService) {
+    public UserManager(UserCheckService userCheckService, UserDao userDao, VerificationService verificationService, RandomSignManager randomSignManager) {
         this.userCheckService = userCheckService;
         this.userDao = userDao;
         this.verificationService = verificationService;
+        this.randomSignManager = randomSignManager;
     }
 
     @Override
@@ -27,6 +30,7 @@ public class UserManager implements UserService {
         if (mail == user.getMail() && pass == user.getPassword()){
             System.out.println("Login successful.");
         }else {
+            System.out.println("Login Failed.");
             System.out.println("Wrong input.");
         }
 
