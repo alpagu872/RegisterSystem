@@ -4,8 +4,8 @@ import Entities.Concretes.User;
 
 public interface VerificationService {
 
-    void mailVerification(User user);
+    void sendMailVerification(User user);
 
-    boolean isVerificatedUser(User user);
+    boolean verifyMail(User user);
 
 }

@@ -8,8 +8,8 @@ import java.util.List;
 public class MySQLUserDao implements UserDao {
     @Override
     public void add(User user) {
-        System.out.println("Kullanıcı MySQL üzerine eklendi: " + user.getUserName());
-        System.out.println("Onaylama maili gönderildi.");
+        System.out.println("User added to MySQL DB: " + user.getUserName());
+
     }
 
     @Override
