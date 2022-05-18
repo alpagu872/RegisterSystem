@@ -23,4 +23,4 @@ Kullanıcılar sisteme bilgilerini girerek üye olabilmelidir.
 E-posta ve parola zorunludur
 Hatalı veya başarılı durumda kullanıcı bilgilendirilmelidir.
 
-### Every task is completed. || 1:20 AM
+### Every task is completed. || 1:20 AM 5/19/2022
