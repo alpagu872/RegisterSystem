@@ -13,10 +13,10 @@ public class Main
         UserService userService = new UserManager(new UserCheckManager(),new MySQLUserDao(), new VerificationManager(),new RandomSignManager());
 
         RandomSignManager randomSignManager = new RandomSignManager();
-        User hasan1 = new User(1, "HasanAkgun","Hasan","Akgün", "123123","hasanAkgun@gmail.com");
+        User userTest = new User(1, "Alpagu87","Alp","Deneyen", "123123","alp@info.com");
 
-        userService.signUp(hasan1);
-        userService.login("hasanAkgun@gmail.com","123123",hasan1);
+        userService.signUp(userTest);
+        userService.login("alp@info.com","123123",userTest);
 
     }
 }
